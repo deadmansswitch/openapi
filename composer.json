@@ -1,0 +1,32 @@
+{
+    "name": "deadmansswitch/openapi",
+    "version": "0.1.0",
+    "description": "PHP API to work with OpenAPI schema. Allows to read and write OpenAPI Schema using PHP object representation",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DeadMansSwitch\\OpenAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeadMansSwitch\\OpenAPI\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luke Kortunov",
+            "email": "luke@kortunov.me"
+        }
+    ],
+    "require": {
+        "php": "^8.1 || ^8.2 || ^8.3",
+        "symfony/serializer": "^6.0|^7.0",
+        "symfony/property-access": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.2",
+        "spatie/ray": "^1.41"
+    }
+}

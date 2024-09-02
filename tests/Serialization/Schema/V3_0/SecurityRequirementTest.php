@@ -1,0 +1,57 @@
+<?php
+
+declare(strict_types=1);
+
+namespace DeadMansSwitch\OpenAPI\Tests\Serialization\Schema\V3_0;
+
+use DeadMansSwitch\OpenAPI\Schema\V3_0\SecurityRequirement;
+use DeadMansSwitch\OpenAPI\Serializer\SerializerFactory;
+use PHPUnit\Framework\Attributes\CoversNothing;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\Serializer\SerializerInterface;
+
+#[CoversNothing]
+final class SecurityRequirementTest extends TestCase
+{
+    private SerializerInterface $serializer;
+
+    protected function setUp(): void
+    {
+        $this->serializer = SerializerFactory::create();
+    }
+
+    #[DataProvider('data')]
+    public function testDeserialize(string $json, SecurityRequirement $schema): void
+    {
+        $actual = $this->serializer->deserialize($json, SecurityRequirement::class, 'json');
+
+        $this->assertEquals($schema, $actual);
+    }
+
+    #[DataProvider('data')]
+    public function testSerialize(string $json, SecurityRequirement $schema): void
+    {
+        $actual = $this->serializer->serialize($schema, 'json');
+
+        $this->assertJsonStringEqualsJsonString($json, $actual);
+    }
+
+    public static function data(): iterable
+    {
+        yield 'Official example' => [
+            'json' => '{
+                "petstore_auth": [
+                    "write:pets",
+                    "read:pets"
+                ]
+            }',
+            'schema' => SecurityRequirement::fromArray([
+                'petstore_auth' => [
+                    'write:pets',
+                    'read:pets',
+                ],
+            ]),
+        ];
+    }
+}

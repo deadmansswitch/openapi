@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  php:
+    image: lynxsolutions/php:8.2-cli-alpine-pcov
+    volumes:
+      - ./:/app
