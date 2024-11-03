@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace DeadMansSwitch\OpenApi\Schema\V3_0\Extra;
 
 use DeadMansSwitch\OpenApi\Schema\V3_0\Reference;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\RequestBody;
-use DeadMansSwitch\OpenAPI\Types\MapOfObjects;
+use DeadMansSwitch\OpenApi\Schema\V3_0\RequestBody;
+use DeadMansSwitch\OpenApi\Types\MapOfObjects;
 use TypeError;
 
 final class RequestBodyMap extends MapOfObjects

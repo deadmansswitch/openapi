@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Serializer;
+namespace DeadMansSwitch\OpenApi\Serializer;
 
 use ArrayObject;
 use ReflectionClass;

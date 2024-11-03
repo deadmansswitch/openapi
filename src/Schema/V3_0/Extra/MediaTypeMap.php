@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace DeadMansSwitch\OpenApi\Schema\V3_0\Extra;
 
 use InvalidArgumentException;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\MediaType;
-use DeadMansSwitch\OpenAPI\Types\MapOfObjects;
+use DeadMansSwitch\OpenApi\Schema\V3_0\MediaType;
+use DeadMansSwitch\OpenApi\Types\MapOfObjects;
 
 final class MediaTypeMap extends MapOfObjects
 {

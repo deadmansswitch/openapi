@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace DeadMansSwitch\OpenApi\Schema\V3_0\Extra;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Callback;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Reference;
-use DeadMansSwitch\OpenAPI\Types\MapOfObjects;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Callback;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Reference;
+use DeadMansSwitch\OpenApi\Types\MapOfObjects;
 use TypeError;
 
 final class CallbackMap extends MapOfObjects
