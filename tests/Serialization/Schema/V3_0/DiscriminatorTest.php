@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Tests\Serialization\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Tests\Serialization\Schema\V3_0;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Discriminator;
-use DeadMansSwitch\OpenAPI\Serializer\SerializerFactory;
-use DeadMansSwitch\OpenAPI\Types\MapOfStrings;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Discriminator;
+use DeadMansSwitch\OpenApi\Serializer\SerializerFactory;
+use DeadMansSwitch\OpenApi\Types\MapOfStrings;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;

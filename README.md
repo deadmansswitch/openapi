@@ -25,14 +25,14 @@ $json = '{
     }
 }';
 
-$serializer = \DeadMansSwitch\OpenAPI\Serializer\SerializerFactory::create();
-$openapi    = $serializer->deserialize(
+$serializer = \DeadMansSwitch\OpenApi\Serializer\SerializerFactory::create();
+$OpenApi    = $serializer->deserialize(
     data: $json,
-    type: \DeadMansSwitch\OpenAPI\Schema\V3_0\OpenApi::class,
+    type: \DeadMansSwitch\OpenApi\Schema\V3_0\OpenApi::class,
     format: 'json',
 );
 
-print_r($openapi);
+print_r($OpenApi);
 exit(0);
 
 ```
@@ -41,17 +41,17 @@ PHP -> JSON:
 
 ```php 
 
-$openapi = new \DeadMansSwitch\OpenAPI\Schema\V3_0\OpenApi(
-    openapi: '3.0.0',
-    info: new \DeadMansSwitch\OpenAPI\Schema\V3_0\Info(
+$OpenApi = new \DeadMansSwitch\OpenApi\Schema\V3_0\OpenApi(
+    OpenApi: '3.0.0',
+    info: new \DeadMansSwitch\OpenApi\Schema\V3_0\Info(
         title: 'Sample API',
         version: '1.0.0',
     ),
-    paths: \DeadMansSwitch\OpenAPI\Schema\V3_0\Paths::fromArray([
-        '/' => new \DeadMansSwitch\OpenAPI\Schema\V3_0\PathItem(
-            get: new \DeadMansSwitch\OpenAPI\Schema\V3_0\Operation(
-                responses: \DeadMansSwitch\OpenAPI\Schema\V3_0\Responses::fromArray([
-                    '200' => new \DeadMansSwitch\OpenAPI\Schema\V3_0\Response(
+    paths: \DeadMansSwitch\OpenApi\Schema\V3_0\Paths::fromArray([
+        '/' => new \DeadMansSwitch\OpenApi\Schema\V3_0\PathItem(
+            get: new \DeadMansSwitch\OpenApi\Schema\V3_0\Operation(
+                responses: \DeadMansSwitch\OpenApi\Schema\V3_0\Responses::fromArray([
+                    '200' => new \DeadMansSwitch\OpenApi\Schema\V3_0\Response(
                         description: 'OK',
                     ),
                 ]),
@@ -60,7 +60,7 @@ $openapi = new \DeadMansSwitch\OpenAPI\Schema\V3_0\OpenApi(
     ]),
 );
 
-$serializer = \DeadMansSwitch\OpenAPI\Serializer\SerializerFactory::create();
+$serializer = \DeadMansSwitch\OpenApi\Serializer\SerializerFactory::create();
 $json       = $serializer->serialize(
     data: $openapi,
     format: 'json',

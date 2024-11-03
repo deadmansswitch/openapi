@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Schema\V3_0\Extra;
+namespace DeadMansSwitch\OpenApi\Schema\V3_0\Extra;
 
 use InvalidArgumentException;
 use DeadMansSwitch\OpenAPI\Schema\V3_0\MediaType;

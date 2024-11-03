@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Tests\Serialization\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Tests\Serialization\Schema\V3_0;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\SecurityRequirement;
-use DeadMansSwitch\OpenAPI\Serializer\SerializerFactory;
+use DeadMansSwitch\OpenApi\Schema\V3_0\SecurityRequirement;
+use DeadMansSwitch\OpenApi\Serializer\SerializerFactory;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Serializer;
+namespace DeadMansSwitch\OpenApi\Serializer;
 
 use LogicException;
 use ReflectionClass;
-use DeadMansSwitch\OpenAPI\Types\UnionTypePropertyOwner;
+use DeadMansSwitch\OpenApi\Types\UnionTypePropertyOwner;
 use ReflectionException;
 use ReflectionNamedType;
 use ReflectionUnionType;

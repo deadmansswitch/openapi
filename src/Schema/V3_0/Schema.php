@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Schema\V3_0;
 
 use InvalidArgumentException;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\SchemasMap;
-use DeadMansSwitch\OpenAPI\Types\UnionTypePropertyOwner;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\SchemasMap;
+use DeadMansSwitch\OpenApi\Types\UnionTypePropertyOwner;
 
 final class Schema extends UnionTypePropertyOwner
 {

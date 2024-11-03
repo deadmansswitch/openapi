@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Serializer;
+namespace DeadMansSwitch\OpenApi\Serializer;
 
-use DeadMansSwitch\OpenAPI\Types\MapOfObjects;
+use DeadMansSwitch\OpenApi\Types\MapOfObjects;
 use Symfony\Component\Serializer\Exception\UnexpectedPropertyException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 

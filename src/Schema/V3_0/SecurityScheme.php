@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Schema\V3_0;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Enum\SecuritySchemeHttpAuthScheme;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Enum\SecuritySchemeIn;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Enum\SecuritySchemeType;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Enum\SecuritySchemeHttpAuthScheme;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Enum\SecuritySchemeIn;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Enum\SecuritySchemeType;
 
 final class SecurityScheme
 {

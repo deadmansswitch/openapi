@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Schema\V3_0;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\HeadersMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\HeadersMap;
 
 final class Encoding
 {

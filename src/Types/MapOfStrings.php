@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Types;
+namespace DeadMansSwitch\OpenApi\Types;
 
 use ArrayAccess;
 use ArrayIterator;

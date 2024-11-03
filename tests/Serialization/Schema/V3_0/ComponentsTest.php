@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Tests\Serialization\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Tests\Serialization\Schema\V3_0;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Components;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Enum\SecuritySchemeIn;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Enum\SecuritySchemeType;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\MediaTypeMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\ParametersMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\SchemasMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\SecuritySchemeMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\MediaType;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\OAuthFlow;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\OAuthFlows;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Parameter;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Reference;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Response;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Responses;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Schema;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\SecurityScheme;
-use DeadMansSwitch\OpenAPI\Serializer\SerializerFactory;
-use DeadMansSwitch\OpenAPI\Types\MapOfStrings;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Components;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Enum\SecuritySchemeIn;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Enum\SecuritySchemeType;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\MediaTypeMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\ParametersMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\SchemasMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\SecuritySchemeMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\MediaType;
+use DeadMansSwitch\OpenApi\Schema\V3_0\OAuthFlow;
+use DeadMansSwitch\OpenApi\Schema\V3_0\OAuthFlows;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Parameter;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Reference;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Response;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Responses;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Schema;
+use DeadMansSwitch\OpenApi\Schema\V3_0\SecurityScheme;
+use DeadMansSwitch\OpenApi\Serializer\SerializerFactory;
+use DeadMansSwitch\OpenApi\Types\MapOfStrings;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;

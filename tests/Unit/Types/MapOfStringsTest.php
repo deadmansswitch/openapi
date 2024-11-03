@@ -1,9 +1,9 @@
 <?php
 
-namespace DeadMansSwitch\OpenAPI\Tests\Unit\Types;
+namespace DeadMansSwitch\OpenApi\Tests\Unit\Types;
 
 use Exception;
-use DeadMansSwitch\OpenAPI\Types\MapOfStrings;
+use DeadMansSwitch\OpenApi\Types\MapOfStrings;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 

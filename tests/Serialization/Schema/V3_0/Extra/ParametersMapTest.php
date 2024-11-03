@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Tests\Serialization\Schema\V3_0\Extra;
+namespace DeadMansSwitch\OpenApi\Tests\Serialization\Schema\V3_0\Extra;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\ParametersMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Parameter;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Schema;
-use DeadMansSwitch\OpenAPI\Serializer\SerializerFactory;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\ParametersMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Parameter;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Schema;
+use DeadMansSwitch\OpenApi\Serializer\SerializerFactory;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;

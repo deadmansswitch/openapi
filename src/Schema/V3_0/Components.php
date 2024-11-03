@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Schema\V3_0;
+namespace DeadMansSwitch\OpenApi\Schema\V3_0;
 
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\CallbackMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\ExamplesMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\HeadersMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\LinksMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\ParametersMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\RequestBodyMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\SchemasMap;
-use DeadMansSwitch\OpenAPI\Schema\V3_0\Extra\SecuritySchemeMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\CallbackMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\ExamplesMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\HeadersMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\LinksMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\ParametersMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\RequestBodyMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\SchemasMap;
+use DeadMansSwitch\OpenApi\Schema\V3_0\Extra\SecuritySchemeMap;
 
 final class Components
 {

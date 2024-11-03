@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DeadMansSwitch\OpenAPI\Schema\V3_0\Enum;
+namespace DeadMansSwitch\OpenApi\Schema\V3_0\Enum;
 
 enum SecuritySchemeHttpAuthScheme: string
 {

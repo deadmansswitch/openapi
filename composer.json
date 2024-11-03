@@ -6,12 +6,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "DeadMansSwitch\\OpenAPI\\": "src/"
+            "DeadMansSwitch\\OpenApi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DeadMansSwitch\\OpenAPI\\Tests\\": "tests/"
+            "DeadMansSwitch\\OpenApi\\Tests\\": "tests/"
         }
     },
     "authors": [
