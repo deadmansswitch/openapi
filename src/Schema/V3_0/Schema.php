@@ -19,6 +19,7 @@ final class Schema extends UnionTypePropertyOwner
         public ?int $minimum = null,
         public Schema|Reference|null $items = null,
         public mixed $example = null,
+        public ?array $enum = null,
     ) {}
 
     static function getType(string $property, mixed $value): string|null

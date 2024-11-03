@@ -70,5 +70,28 @@ final class ParameterTest extends TestCase
                 ),
             ),
         ];
+
+        yield [
+            'json' => '{
+                "name": "order",
+                "in": "query",
+                "description": "query direction",
+                "required": true,
+                "schema": {
+                    "type": "string",
+                    "enum": ["asc", "desc"]
+                }
+            }',
+            'schema' => new Parameter(
+                name: 'order',
+                in: 'query',
+                description: 'query direction',
+                required: true,
+                schema: new Schema(
+                    type: 'string',
+                    enum: ['asc', 'desc'],
+                ),
+            ),
+        ];
     }
 }
