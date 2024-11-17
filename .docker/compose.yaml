@@ -1,8 +1,0 @@
-services:
-  php:
-    build:
-      dockerfile: ./.docker/php/Dockerfile
-      context: .
-    volumes:
-      - "./:/app"
-    command: tail -f /dev/null
