@@ -43,13 +43,15 @@ final class ExternalDocumentationTest extends TestCase
             'expected' => new ExternalDocumentation(
                 description: 'Find more info here',
                 url: 'https://example.com'
-            )
+            ),
+            'exception' => null,
         ];
 
         yield 'Mandatory property `url` is missed' => [
             'json' => '{
                 "description": "Find more info here"
             }',
+            'expected' => null,
             'exception' => 'Symfony\Component\Serializer\Exception\MissingConstructorArgumentsException'
         ];
     }
@@ -76,7 +78,8 @@ final class ExternalDocumentationTest extends TestCase
             'json' => '{
                 "description": "Find more info here",
                 "url": "https://example.com"
-            }'
+            }',
+            'exception' => null,
         ];
     }
 }
