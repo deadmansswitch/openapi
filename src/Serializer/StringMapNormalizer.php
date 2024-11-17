@@ -5,17 +5,17 @@ declare(strict_types=1);
 namespace DeadMansSwitch\OpenApi\Serializer;
 
 use DeadMansSwitch\OpenApi\Types\MapOfStrings;
-use Symfony\Component\Serializer\Exception\UnexpectedPropertyException;
+use Symfony\Component\Serializer\Exception\UnexpectedValueException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 final class StringMapNormalizer implements DenormalizerInterface
 {
-    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): MapOfStrings
     {
         $map = new $type;
 
         if (!$map instanceof MapOfStrings) {
-            throw new UnexpectedPropertyException('Unexpected property type MapOfStrings');
+            throw new UnexpectedValueException('Unexpected property type MapOfStrings');
         }
 
         foreach ($data as $k => $v) {
