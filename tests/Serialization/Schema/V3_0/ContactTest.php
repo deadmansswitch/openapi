@@ -47,6 +47,7 @@ final class ContactTest extends TestCase
                 url: 'https://www.example.com/support',
                 email: 'support@example.com',
             ),
+            'exception'   => null,
         ];
 
         yield 'All good: properties is set to null' => [
@@ -60,6 +61,7 @@ final class ContactTest extends TestCase
                 url: null,
                 email: null,
             ),
+            'exception'   => null,
         ];
 
         yield 'All good: properties are non-string scalars' => [
@@ -73,6 +75,7 @@ final class ContactTest extends TestCase
                 url: "123",
                 email: "",
             ),
+            'exception'   => null,
         ];
 
         yield 'Unexpected: Properties are not scalars' => [
@@ -81,6 +84,7 @@ final class ContactTest extends TestCase
                 "url": {},
                 "email": "foo@bar.baz"
             }',
+            'expected'  => null,
             'exception' => TypeError::class,
         ];
     }
@@ -110,6 +114,7 @@ final class ContactTest extends TestCase
                 "url": "https://www.example.com/support",
                 "email": "foo@bar.baz"
             }',
+            'exception' => null,
         ];
     }
 }

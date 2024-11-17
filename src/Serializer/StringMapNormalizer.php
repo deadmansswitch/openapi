@@ -8,7 +8,7 @@ use DeadMansSwitch\OpenApi\Types\MapOfStrings;
 use Symfony\Component\Serializer\Exception\UnexpectedPropertyException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
-final readonly class StringMapNormalizer implements DenormalizerInterface
+final class StringMapNormalizer implements DenormalizerInterface
 {
     public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
     {
