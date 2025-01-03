@@ -37,50 +37,54 @@ final class ContactTest extends TestCase
     public static function deserializeDataProvider(): iterable
     {
         yield 'All good: official example' => [
-            'json'      => '{
+            'json' => '{
                 "name": "API Support",
                 "url": "https://www.example.com/support",
                 "email": "support@example.com"
             }',
-            'expected'    => new Contact(
+            'expected' => new Contact(
                 name: 'API Support',
                 url: 'https://www.example.com/support',
                 email: 'support@example.com',
             ),
+            'exception' => null,
         ];
 
         yield 'All good: properties is set to null' => [
-            'json'      => '{
+            'json' => '{
                 "name": null,
                 "url": null,
                 "email": null
             }',
-            'expected'    => new Contact(
+            'expected' => new Contact(
                 name: null,
                 url: null,
                 email: null,
             ),
+            'exception' => null,
         ];
 
         yield 'All good: properties are non-string scalars' => [
-            'json'      => '{
+            'json' => '{
                 "name": true,
                 "url": 123,
                 "email": false
             }',
-            'expected'    => new Contact(
+            'expected' => new Contact(
                 name: "1",
                 url: "123",
                 email: "",
             ),
+            'exception' => null,
         ];
 
         yield 'Unexpected: Properties are not scalars' => [
-            'json'      => '{
+            'json' => '{
                 "name": [],
                 "url": {},
                 "email": "foo@bar.baz"
             }',
+            'expected' => null,
             'exception' => TypeError::class,
         ];
     }
@@ -110,6 +114,7 @@ final class ContactTest extends TestCase
                 "url": "https://www.example.com/support",
                 "email": "foo@bar.baz"
             }',
+            'exception' => null,
         ];
     }
 }

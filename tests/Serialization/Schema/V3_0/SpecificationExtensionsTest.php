@@ -22,7 +22,7 @@ final class SpecificationExtensionsTest extends TestCase
     }
 
     #[DataProvider('data')]
-    public function testDeserialize(string $json, SpecificationExtensions $schema): void
+    public function testDeserialize(SpecificationExtensions $schema, string $json): void
     {
         $actual = $this->serializer->deserialize($json, SpecificationExtensions::class, 'json');
 
@@ -30,7 +30,7 @@ final class SpecificationExtensionsTest extends TestCase
     }
 
     #[DataProvider('data')]
-    public function testSerialize(string $json, SpecificationExtensions $schema): void
+    public function testSerialize(SpecificationExtensions $schema, string $json): void
     {
         $actual = $this->serializer->serialize($schema, 'json');
 
