@@ -78,7 +78,8 @@ final class ExternalDocumentationTest extends TestCase
             'json' => '{
                 "description": "Find more info here",
                 "url": "https://example.com"
-            }'
+            }',
+            'exception' => null,
         ];
     }
 }

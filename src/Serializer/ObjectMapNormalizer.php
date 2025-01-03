@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace DeadMansSwitch\OpenApi\Serializer;
 
 use DeadMansSwitch\OpenApi\Types\MapOfObjects;
-use Symfony\Component\Serializer\Exception\UnexpectedPropertyException;
+use Symfony\Component\Serializer\Exception\UnexpectedValueException;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 final class ObjectMapNormalizer implements DenormalizerInterface
@@ -16,7 +16,7 @@ final class ObjectMapNormalizer implements DenormalizerInterface
         $serializer = SerializerFactory::create();
 
         if (!$map instanceof MapOfObjects) {
-            throw new UnexpectedPropertyException('Unexpected property type MapOfObjects');
+            throw new UnexpectedValueException('Unexpected property type MapOfObjects');
         }
 
         foreach ($data as $k => $v) {

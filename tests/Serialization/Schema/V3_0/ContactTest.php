@@ -114,7 +114,6 @@ final class ContactTest extends TestCase
                 "url": "https://www.example.com/support",
                 "email": "foo@bar.baz"
             }',
-            'exception' => null,
         ];
     }
 }
