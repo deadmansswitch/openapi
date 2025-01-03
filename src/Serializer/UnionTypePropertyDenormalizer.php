@@ -12,7 +12,7 @@ use ReflectionNamedType;
 use ReflectionUnionType;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
-final readonly class UnionTypePropertyDenormalizer implements DenormalizerInterface
+final class UnionTypePropertyDenormalizer implements DenormalizerInterface
 {
     public const BREAKER = '5a6740d9-acab-4ee4-a4C8-4a40828b4653';
 
