@@ -1,7 +1,16 @@
-version: "3.9"
-
 services:
-  php:
-    image: lynxsolutions/php:8.2-cli-alpine-pcov
+  composer:
+    build:
+      context: ./.docker/composer
+      dockerfile: Dockerfile
     volumes:
       - ./:/app
+    command: tail -f > /dev/null
+
+  buggregator:
+    image: ghcr.io/buggregator/server:latest
+    ports:
+      - "8000:8000"
+      - "1025:1025"
+      - "9912:9912"
+      - "9913:9913"
